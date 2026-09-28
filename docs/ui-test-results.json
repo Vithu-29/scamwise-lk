@@ -1,0 +1,98 @@
+{
+  "executedAt": "2026-09-28T12:34:40.583Z",
+  "environment": "jsdom 26 simulated DOM; not real browser or native WebMCP validation",
+  "passed": 18,
+  "total": 18,
+  "results": [
+    {
+      "id": "UI01",
+      "name": "Unanswered defaults and optional Not sure selection",
+      "pass": true
+    },
+    {
+      "id": "UI02",
+      "name": "Forward sample, real engine, and trace",
+      "pass": true
+    },
+    {
+      "id": "UI03",
+      "name": "Editing answer invalidates stale result",
+      "pass": true
+    },
+    {
+      "id": "UI04",
+      "name": "Backward goal UI and returned proof",
+      "pass": true
+    },
+    {
+      "id": "UI05",
+      "name": "Reset clears answers and disables checking",
+      "pass": true
+    },
+    {
+      "id": "UI06",
+      "name": "Explicit Not sure completes form but remains unknown evidence",
+      "pass": true
+    },
+    {
+      "id": "UI07",
+      "name": "Navigate all four questionnaire sections",
+      "pass": true
+    },
+    {
+      "id": "UI08",
+      "name": "Applied-rule explanations retain source references",
+      "pass": true
+    },
+    {
+      "id": "UI09",
+      "name": "Help routes and official contacts",
+      "pass": true
+    },
+    {
+      "id": "UI10",
+      "name": "Two-page navigation and retired knowledge route",
+      "pass": true
+    },
+    {
+      "id": "UI11",
+      "name": "WebMCP registration in emulated API context",
+      "pass": true
+    },
+    {
+      "id": "UI12",
+      "name": "WebMCP valid action shares visible state",
+      "pass": true
+    },
+    {
+      "id": "UI13",
+      "name": "Invalid WebMCP input leaves existing result intact",
+      "pass": true
+    },
+    {
+      "id": "UI14",
+      "name": "Backward mode retains immediate bank warning",
+      "pass": true
+    },
+    {
+      "id": "UI15",
+      "name": "Incomplete forms cannot be assessed in either mode",
+      "pass": true
+    },
+    {
+      "id": "UI16",
+      "name": "Last unanswered question, shortcut and completion boundary",
+      "pass": true
+    },
+    {
+      "id": "UI17",
+      "name": "Loading a partial example disables a previously completed form",
+      "pass": true
+    },
+    {
+      "id": "UI18",
+      "name": "No JavaScript runtime errors during tested flows",
+      "pass": true
+    }
+  ]
+}
