@@ -1,0 +1,1344 @@
+{
+  "executedAt": "2026-09-28T12:33:33.900Z",
+  "runtime": "v24.11.0",
+  "interpreter": "Tau Prolog 0.3.4",
+  "passed": 48,
+  "total": 48,
+  "ruleCoverage": {
+    "fired": 31,
+    "total": 31,
+    "ids": [
+      "r01",
+      "r02",
+      "r03",
+      "r04",
+      "r05",
+      "r06",
+      "r07",
+      "r08",
+      "r09",
+      "r10",
+      "r11",
+      "r12",
+      "r13",
+      "r14",
+      "r15",
+      "r16",
+      "r17",
+      "r18",
+      "r19",
+      "r20",
+      "r21",
+      "r22",
+      "r23",
+      "r24",
+      "r25",
+      "r26",
+      "r27",
+      "r28",
+      "r29",
+      "r30",
+      "r31"
+    ]
+  },
+  "results": [
+    {
+      "id": "T01",
+      "name": "Bank caller requests OTP",
+      "input": {
+        "otp": "yes",
+        "impersonation": "yes"
+      },
+      "expected": {
+        "bankContact": true,
+        "ruleIds": [
+          "r01",
+          "r05",
+          "r06"
+        ],
+        "backward": "supported"
+      },
+      "actual": {
+        "bankContact": true,
+        "ruleIds": [
+          "r01",
+          "r05",
+          "r06"
+        ],
+        "backward": "supported"
+      },
+      "pass": true
+    },
+    {
+      "id": "T02",
+      "name": "PIN requested",
+      "input": {
+        "pin": "yes"
+      },
+      "expected": {
+        "bankContact": true,
+        "ruleIds": [
+          "r02",
+          "r06"
+        ],
+        "backward": "supported"
+      },
+      "actual": {
+        "bankContact": true,
+        "ruleIds": [
+          "r02",
+          "r06"
+        ],
+        "backward": "supported"
+      },
+      "pass": true
+    },
+    {
+      "id": "T03",
+      "name": "Password requested",
+      "input": {
+        "password": "yes"
+      },
+      "expected": {
+        "bankContact": true,
+        "ruleIds": [
+          "r03",
+          "r06"
+        ],
+        "backward": "supported"
+      },
+      "actual": {
+        "bankContact": true,
+        "ruleIds": [
+          "r03",
+          "r06"
+        ],
+        "backward": "supported"
+      },
+      "pass": true
+    },
+    {
+      "id": "T04",
+      "name": "Card security code requested",
+      "input": {
+        "cvv": "yes"
+      },
+      "expected": {
+        "bankContact": true,
+        "ruleIds": [
+          "r04",
+          "r06"
+        ],
+        "backward": "supported"
+      },
+      "actual": {
+        "bankContact": true,
+        "ruleIds": [
+          "r04",
+          "r06"
+        ],
+        "backward": "supported"
+      },
+      "pass": true
+    },
+    {
+      "id": "T05",
+      "name": "Unexpected prize with fee",
+      "input": {
+        "prize": "yes",
+        "fee": "yes"
+      },
+      "expected": {
+        "bankContact": false,
+        "ruleIds": [
+          "r07",
+          "r30"
+        ],
+        "backward": "supported"
+      },
+      "actual": {
+        "bankContact": false,
+        "ruleIds": [
+          "r07",
+          "r30"
+        ],
+        "backward": "supported"
+      },
+      "pass": true
+    },
+    {
+      "id": "T06",
+      "name": "Unexpected prize collects NIC",
+      "input": {
+        "prize": "yes",
+        "identity": "yes"
+      },
+      "expected": {
+        "bankContact": false,
+        "ruleIds": [
+          "r08",
+          "r30"
+        ],
+        "backward": "supported"
+      },
+      "actual": {
+        "bankContact": false,
+        "ruleIds": [
+          "r08",
+          "r30"
+        ],
+        "backward": "supported"
+      },
+      "pass": true
+    },
+    {
+      "id": "T07",
+      "name": "Reward for unlocking blocked funds",
+      "input": {
+        "blocked": "yes"
+      },
+      "expected": {
+        "bankContact": false,
+        "ruleIds": [
+          "r09"
+        ],
+        "backward": "supported"
+      },
+      "actual": {
+        "bankContact": false,
+        "ruleIds": [
+          "r09"
+        ],
+        "backward": "supported"
+      },
+      "pass": true
+    },
+    {
+      "id": "T08",
+      "name": "Blocked funds claim CBSL approval",
+      "input": {
+        "blocked": "yes",
+        "approval": "yes"
+      },
+      "expected": {
+        "bankContact": false,
+        "ruleIds": [
+          "r09",
+          "r10"
+        ],
+        "backward": "supported"
+      },
+      "actual": {
+        "bankContact": false,
+        "ruleIds": [
+          "r09",
+          "r10"
+        ],
+        "backward": "supported"
+      },
+      "pass": true
+    },
+    {
+      "id": "T09",
+      "name": "Recruitment-based earnings",
+      "input": {
+        "recruitment": "yes"
+      },
+      "expected": {
+        "bankContact": false,
+        "ruleIds": [
+          "r11",
+          "r29"
+        ],
+        "backward": "supported"
+      },
+      "actual": {
+        "bankContact": false,
+        "ruleIds": [
+          "r11",
+          "r29"
+        ],
+        "backward": "supported"
+      },
+      "pass": true
+    },
+    {
+      "id": "T10",
+      "name": "Contribution-based earnings",
+      "input": {
+        "contributions": "yes"
+      },
+      "expected": {
+        "bankContact": false,
+        "ruleIds": [
+          "r12",
+          "r29"
+        ],
+        "backward": "supported"
+      },
+      "actual": {
+        "bankContact": false,
+        "ruleIds": [
+          "r12",
+          "r29"
+        ],
+        "backward": "supported"
+      },
+      "pass": true
+    },
+    {
+      "id": "T11",
+      "name": "Implausible return promise",
+      "input": {
+        "returns": "yes"
+      },
+      "expected": {
+        "bankContact": false,
+        "ruleIds": [
+          "r13"
+        ],
+        "backward": "supported"
+      },
+      "actual": {
+        "bankContact": false,
+        "ruleIds": [
+          "r13"
+        ],
+        "backward": "supported"
+      },
+      "pass": true
+    },
+    {
+      "id": "T12",
+      "name": "Unverified investment authorisation",
+      "input": {
+        "provider": "yes"
+      },
+      "expected": {
+        "bankContact": false,
+        "ruleIds": [
+          "r14"
+        ],
+        "backward": "supported"
+      },
+      "actual": {
+        "bankContact": false,
+        "ruleIds": [
+          "r14"
+        ],
+        "backward": "supported"
+      },
+      "pass": true
+    },
+    {
+      "id": "T13",
+      "name": "Loan app wants contacts",
+      "input": {
+        "loan": "yes",
+        "contacts": "yes"
+      },
+      "expected": {
+        "bankContact": false,
+        "ruleIds": [
+          "r15"
+        ],
+        "backward": "supported"
+      },
+      "actual": {
+        "bankContact": false,
+        "ruleIds": [
+          "r15"
+        ],
+        "backward": "supported"
+      },
+      "pass": true
+    },
+    {
+      "id": "T14",
+      "name": "Loan app wants files",
+      "input": {
+        "loan": "yes",
+        "files": "yes"
+      },
+      "expected": {
+        "bankContact": false,
+        "ruleIds": [
+          "r16"
+        ],
+        "backward": "supported"
+      },
+      "actual": {
+        "bankContact": false,
+        "ruleIds": [
+          "r16"
+        ],
+        "backward": "supported"
+      },
+      "pass": true
+    },
+    {
+      "id": "T15",
+      "name": "Loan terms unclear",
+      "input": {
+        "loan": "yes",
+        "terms": "yes"
+      },
+      "expected": {
+        "bankContact": false,
+        "ruleIds": [
+          "r17"
+        ],
+        "backward": "supported"
+      },
+      "actual": {
+        "bankContact": false,
+        "ruleIds": [
+          "r17"
+        ],
+        "backward": "supported"
+      },
+      "pass": true
+    },
+    {
+      "id": "T16",
+      "name": "Lender details absent",
+      "input": {
+        "loan": "yes",
+        "lender": "yes"
+      },
+      "expected": {
+        "bankContact": false,
+        "ruleIds": [
+          "r18"
+        ],
+        "backward": "supported"
+      },
+      "actual": {
+        "bankContact": false,
+        "ruleIds": [
+          "r18"
+        ],
+        "backward": "supported"
+      },
+      "pass": true
+    },
+    {
+      "id": "T17",
+      "name": "Unusually low price alone",
+      "input": {
+        "cheap": "yes"
+      },
+      "expected": {
+        "bankContact": false,
+        "ruleIds": [
+          "r19"
+        ],
+        "backward": "supported"
+      },
+      "actual": {
+        "bankContact": false,
+        "ruleIds": [
+          "r19"
+        ],
+        "backward": "supported"
+      },
+      "pass": true
+    },
+    {
+      "id": "T18",
+      "name": "Missing store policies alone",
+      "input": {
+        "policies": "yes"
+      },
+      "expected": {
+        "bankContact": false,
+        "ruleIds": [
+          "r20"
+        ],
+        "backward": "supported"
+      },
+      "actual": {
+        "bankContact": false,
+        "ruleIds": [
+          "r20"
+        ],
+        "backward": "supported"
+      },
+      "pass": true
+    },
+    {
+      "id": "T19",
+      "name": "Unverified delivery link",
+      "input": {
+        "delivery": "yes",
+        "link": "yes"
+      },
+      "expected": {
+        "bankContact": false,
+        "ruleIds": [
+          "r21",
+          "r22"
+        ],
+        "backward": "supported"
+      },
+      "actual": {
+        "bankContact": false,
+        "ruleIds": [
+          "r21",
+          "r22"
+        ],
+        "backward": "supported"
+      },
+      "pass": true
+    },
+    {
+      "id": "T20",
+      "name": "Unverified message link alone",
+      "input": {
+        "link": "yes"
+      },
+      "expected": {
+        "bankContact": false,
+        "ruleIds": [
+          "r22"
+        ],
+        "backward": "supported"
+      },
+      "actual": {
+        "bankContact": false,
+        "ruleIds": [
+          "r22"
+        ],
+        "backward": "supported"
+      },
+      "pass": true
+    },
+    {
+      "id": "T21",
+      "name": "Untrusted app download",
+      "input": {
+        "download": "yes"
+      },
+      "expected": {
+        "bankContact": false,
+        "ruleIds": [
+          "r23"
+        ],
+        "backward": "supported"
+      },
+      "actual": {
+        "bankContact": false,
+        "ruleIds": [
+          "r23"
+        ],
+        "backward": "supported"
+      },
+      "pass": true
+    },
+    {
+      "id": "T22",
+      "name": "Account rental request",
+      "input": {
+        "rental": "yes"
+      },
+      "expected": {
+        "bankContact": false,
+        "ruleIds": [
+          "r24"
+        ],
+        "backward": "supported"
+      },
+      "actual": {
+        "bankContact": false,
+        "ruleIds": [
+          "r24"
+        ],
+        "backward": "supported"
+      },
+      "pass": true
+    },
+    {
+      "id": "T23",
+      "name": "Payment in a suspected fraud already made",
+      "input": {
+        "sent": "yes"
+      },
+      "expected": {
+        "bankContact": true,
+        "ruleIds": [
+          "r25"
+        ],
+        "backward": "supported"
+      },
+      "actual": {
+        "bankContact": true,
+        "ruleIds": [
+          "r25"
+        ],
+        "backward": "supported"
+      },
+      "pass": true
+    },
+    {
+      "id": "T24",
+      "name": "Credentials disclosed in a suspected fraud",
+      "input": {
+        "shared": "yes"
+      },
+      "expected": {
+        "bankContact": true,
+        "ruleIds": [
+          "r26"
+        ],
+        "backward": "supported"
+      },
+      "actual": {
+        "bankContact": true,
+        "ruleIds": [
+          "r26"
+        ],
+        "backward": "supported"
+      },
+      "pass": true
+    },
+    {
+      "id": "T25",
+      "name": "Unauthorised transaction",
+      "input": {
+        "transaction": "yes"
+      },
+      "expected": {
+        "bankContact": true,
+        "ruleIds": [
+          "r27"
+        ],
+        "backward": "supported"
+      },
+      "actual": {
+        "bankContact": true,
+        "ruleIds": [
+          "r27"
+        ],
+        "backward": "supported"
+      },
+      "pass": true
+    },
+    {
+      "id": "T26",
+      "name": "Missing input",
+      "input": {},
+      "expected": {
+        "bankContact": false,
+        "ruleIds": [],
+        "backward": null
+      },
+      "actual": {
+        "bankContact": false,
+        "ruleIds": [],
+        "backward": null
+      },
+      "pass": true
+    },
+    {
+      "id": "T27",
+      "name": "Every answer is explicitly No",
+      "input": {
+        "otp": "no",
+        "pin": "no",
+        "password": "no",
+        "cvv": "no",
+        "impersonation": "no",
+        "prize": "no",
+        "fee": "no",
+        "identity": "no",
+        "blocked": "no",
+        "approval": "no",
+        "recruitment": "no",
+        "contributions": "no",
+        "returns": "no",
+        "rental": "no",
+        "provider": "no",
+        "loan": "no",
+        "contacts": "no",
+        "files": "no",
+        "terms": "no",
+        "lender": "no",
+        "cheap": "no",
+        "policies": "no",
+        "deposit": "no",
+        "delivery": "no",
+        "link": "no",
+        "download": "no",
+        "sent": "no",
+        "shared": "no",
+        "transaction": "no",
+        "report": "no"
+      },
+      "expected": {
+        "bankContact": false,
+        "ruleIds": [],
+        "backward": null
+      },
+      "actual": {
+        "bankContact": false,
+        "ruleIds": [],
+        "backward": null
+      },
+      "pass": true
+    },
+    {
+      "id": "T28",
+      "name": "Direct transfer alone",
+      "input": {
+        "deposit": "yes"
+      },
+      "expected": {
+        "bankContact": false,
+        "ruleIds": [
+          "r28"
+        ],
+        "backward": "supported"
+      },
+      "actual": {
+        "bankContact": false,
+        "ruleIds": [
+          "r28"
+        ],
+        "backward": "supported"
+      },
+      "pass": true
+    },
+    {
+      "id": "T29",
+      "name": "Contacts access without loan context",
+      "input": {
+        "contacts": "yes",
+        "loan": "no"
+      },
+      "expected": {
+        "bankContact": false,
+        "ruleIds": [],
+        "backward": null
+      },
+      "actual": {
+        "bankContact": false,
+        "ruleIds": [],
+        "backward": null
+      },
+      "pass": true
+    },
+    {
+      "id": "T30",
+      "name": "Unknown OTP answer",
+      "input": {
+        "otp": "unknown"
+      },
+      "expected": {
+        "bankContact": false,
+        "ruleIds": [],
+        "backward": null
+      },
+      "actual": {
+        "bankContact": false,
+        "ruleIds": [],
+        "backward": null
+      },
+      "pass": true
+    },
+    {
+      "id": "T31",
+      "name": "Several patterns and exposure",
+      "input": {
+        "otp": "yes",
+        "prize": "yes",
+        "fee": "yes",
+        "sent": "yes"
+      },
+      "expected": {
+        "bankContact": true,
+        "ruleIds": [
+          "r01",
+          "r06",
+          "r07",
+          "r25",
+          "r30"
+        ],
+        "backward": "supported"
+      },
+      "actual": {
+        "bankContact": true,
+        "ruleIds": [
+          "r01",
+          "r06",
+          "r07",
+          "r25",
+          "r30"
+        ],
+        "backward": "supported"
+      },
+      "pass": true
+    },
+    {
+      "id": "T32",
+      "name": "Two rules support one conclusion",
+      "input": {
+        "otp": "yes",
+        "pin": "yes"
+      },
+      "expected": {
+        "bankContact": true,
+        "ruleIds": [
+          "r01",
+          "r02",
+          "r06"
+        ],
+        "backward": "supported"
+      },
+      "actual": {
+        "bankContact": true,
+        "ruleIds": [
+          "r01",
+          "r02",
+          "r06"
+        ],
+        "backward": "supported"
+      },
+      "pass": true
+    },
+    {
+      "id": "T33",
+      "name": "Missing prize evidence",
+      "input": {
+        "answers": {},
+        "goal": "category(prize)"
+      },
+      "expected": {
+        "status": "unknown"
+      },
+      "actual": {
+        "status": "unknown",
+        "bankContact": false,
+        "proof": {
+          "kind": "alternatives",
+          "term": "category(prize)",
+          "branches": [
+            {
+              "id": "r07",
+              "status": "unknown",
+              "children": [
+                {
+                  "kind": "knowledge",
+                  "id": "f05",
+                  "term": "tactic(prize_fee)",
+                  "source": "s7"
+                },
+                {
+                  "kind": "missing",
+                  "term": "obs(prize,yes)"
+                },
+                {
+                  "kind": "missing",
+                  "term": "obs(fee,yes)"
+                }
+              ]
+            },
+            {
+              "id": "r08",
+              "status": "unknown",
+              "children": [
+                {
+                  "kind": "knowledge",
+                  "id": "f06",
+                  "term": "tactic(prize_identity)",
+                  "source": "s7"
+                },
+                {
+                  "kind": "missing",
+                  "term": "obs(prize,yes)"
+                },
+                {
+                  "kind": "missing",
+                  "term": "obs(identity,yes)"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "T34",
+      "name": "Explicit No contradicts both prize rules",
+      "input": {
+        "answers": {
+          "prize": "no"
+        },
+        "goal": "category(prize)"
+      },
+      "expected": {
+        "status": "not_supported"
+      },
+      "actual": {
+        "status": "not_supported",
+        "bankContact": false,
+        "proof": {
+          "kind": "alternatives",
+          "term": "category(prize)",
+          "branches": [
+            {
+              "id": "r07",
+              "status": "not_supported",
+              "children": [
+                {
+                  "kind": "knowledge",
+                  "id": "f05",
+                  "term": "tactic(prize_fee)",
+                  "source": "s7"
+                },
+                {
+                  "kind": "contradicted",
+                  "term": "obs(prize,yes)",
+                  "actual": "obs(prize,no)"
+                },
+                {
+                  "kind": "missing",
+                  "term": "obs(fee,yes)"
+                }
+              ]
+            },
+            {
+              "id": "r08",
+              "status": "not_supported",
+              "children": [
+                {
+                  "kind": "knowledge",
+                  "id": "f06",
+                  "term": "tactic(prize_identity)",
+                  "source": "s7"
+                },
+                {
+                  "kind": "contradicted",
+                  "term": "obs(prize,yes)",
+                  "actual": "obs(prize,no)"
+                },
+                {
+                  "kind": "missing",
+                  "term": "obs(identity,yes)"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "T35",
+      "name": "Explicit unknown is not false",
+      "input": {
+        "answers": {
+          "prize": "unknown",
+          "fee": "yes"
+        },
+        "goal": "category(prize)"
+      },
+      "expected": {
+        "status": "unknown"
+      },
+      "actual": {
+        "status": "unknown",
+        "bankContact": false,
+        "proof": {
+          "kind": "alternatives",
+          "term": "category(prize)",
+          "branches": [
+            {
+              "id": "r07",
+              "status": "unknown",
+              "children": [
+                {
+                  "kind": "knowledge",
+                  "id": "f05",
+                  "term": "tactic(prize_fee)",
+                  "source": "s7"
+                },
+                {
+                  "kind": "missing",
+                  "term": "obs(prize,yes)"
+                },
+                {
+                  "kind": "input",
+                  "term": "obs(fee,yes)"
+                }
+              ]
+            },
+            {
+              "id": "r08",
+              "status": "unknown",
+              "children": [
+                {
+                  "kind": "knowledge",
+                  "id": "f06",
+                  "term": "tactic(prize_identity)",
+                  "source": "s7"
+                },
+                {
+                  "kind": "missing",
+                  "term": "obs(prize,yes)"
+                },
+                {
+                  "kind": "missing",
+                  "term": "obs(identity,yes)"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "T36",
+      "name": "One complete alternative proves goal",
+      "input": {
+        "answers": {
+          "prize": "yes",
+          "fee": "no",
+          "identity": "yes"
+        },
+        "goal": "category(prize)"
+      },
+      "expected": {
+        "status": "supported"
+      },
+      "actual": {
+        "status": "supported",
+        "bankContact": false,
+        "proof": {
+          "kind": "because",
+          "term": "category(prize)",
+          "id": "r08",
+          "children": [
+            {
+              "kind": "knowledge",
+              "id": "f06",
+              "term": "tactic(prize_identity)",
+              "source": "s7"
+            },
+            {
+              "kind": "input",
+              "term": "obs(prize,yes)"
+            },
+            {
+              "kind": "input",
+              "term": "obs(identity,yes)"
+            }
+          ]
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "T37",
+      "name": "False branch and unknown branch",
+      "input": {
+        "answers": {
+          "prize": "yes",
+          "fee": "no"
+        },
+        "goal": "category(prize)"
+      },
+      "expected": {
+        "status": "unknown"
+      },
+      "actual": {
+        "status": "unknown",
+        "bankContact": false,
+        "proof": {
+          "kind": "alternatives",
+          "term": "category(prize)",
+          "branches": [
+            {
+              "id": "r07",
+              "status": "not_supported",
+              "children": [
+                {
+                  "kind": "knowledge",
+                  "id": "f05",
+                  "term": "tactic(prize_fee)",
+                  "source": "s7"
+                },
+                {
+                  "kind": "input",
+                  "term": "obs(prize,yes)"
+                },
+                {
+                  "kind": "contradicted",
+                  "term": "obs(fee,yes)",
+                  "actual": "obs(fee,no)"
+                }
+              ]
+            },
+            {
+              "id": "r08",
+              "status": "unknown",
+              "children": [
+                {
+                  "kind": "knowledge",
+                  "id": "f06",
+                  "term": "tactic(prize_identity)",
+                  "source": "s7"
+                },
+                {
+                  "kind": "input",
+                  "term": "obs(prize,yes)"
+                },
+                {
+                  "kind": "missing",
+                  "term": "obs(identity,yes)"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "T38",
+      "name": "Both alternatives contradicted",
+      "input": {
+        "answers": {
+          "prize": "yes",
+          "fee": "no",
+          "identity": "no"
+        },
+        "goal": "category(prize)"
+      },
+      "expected": {
+        "status": "not_supported"
+      },
+      "actual": {
+        "status": "not_supported",
+        "bankContact": false,
+        "proof": {
+          "kind": "alternatives",
+          "term": "category(prize)",
+          "branches": [
+            {
+              "id": "r07",
+              "status": "not_supported",
+              "children": [
+                {
+                  "kind": "knowledge",
+                  "id": "f05",
+                  "term": "tactic(prize_fee)",
+                  "source": "s7"
+                },
+                {
+                  "kind": "input",
+                  "term": "obs(prize,yes)"
+                },
+                {
+                  "kind": "contradicted",
+                  "term": "obs(fee,yes)",
+                  "actual": "obs(fee,no)"
+                }
+              ]
+            },
+            {
+              "id": "r08",
+              "status": "not_supported",
+              "children": [
+                {
+                  "kind": "knowledge",
+                  "id": "f06",
+                  "term": "tactic(prize_identity)",
+                  "source": "s7"
+                },
+                {
+                  "kind": "input",
+                  "term": "obs(prize,yes)"
+                },
+                {
+                  "kind": "contradicted",
+                  "term": "obs(identity,yes)",
+                  "actual": "obs(identity,no)"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "T39",
+      "name": "Immediate bank guidance independent of selected goal",
+      "input": {
+        "answers": {
+          "prize": "no",
+          "shared": "yes"
+        },
+        "goal": "category(prize)"
+      },
+      "expected": {
+        "status": "not_supported"
+      },
+      "actual": {
+        "status": "not_supported",
+        "bankContact": true,
+        "proof": {
+          "kind": "alternatives",
+          "term": "category(prize)",
+          "branches": [
+            {
+              "id": "r07",
+              "status": "not_supported",
+              "children": [
+                {
+                  "kind": "knowledge",
+                  "id": "f05",
+                  "term": "tactic(prize_fee)",
+                  "source": "s7"
+                },
+                {
+                  "kind": "contradicted",
+                  "term": "obs(prize,yes)",
+                  "actual": "obs(prize,no)"
+                },
+                {
+                  "kind": "missing",
+                  "term": "obs(fee,yes)"
+                }
+              ]
+            },
+            {
+              "id": "r08",
+              "status": "not_supported",
+              "children": [
+                {
+                  "kind": "knowledge",
+                  "id": "f06",
+                  "term": "tactic(prize_identity)",
+                  "source": "s7"
+                },
+                {
+                  "kind": "contradicted",
+                  "term": "obs(prize,yes)",
+                  "actual": "obs(prize,no)"
+                },
+                {
+                  "kind": "missing",
+                  "term": "obs(identity,yes)"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "pass": true
+    },
+    {
+      "id": "T40",
+      "name": "No state leakage between assessments",
+      "input": {},
+      "expected": "Second assessment has no conclusions",
+      "actual": "Second assessment has no conclusions",
+      "pass": true
+    },
+    {
+      "id": "T41",
+      "name": "Reject malformed input key",
+      "input": {
+        "otp).halt.": "yes"
+      },
+      "expected": "Rejected",
+      "actual": "Rejected",
+      "pass": true
+    },
+    {
+      "id": "T42",
+      "name": "Reject invalid answer value",
+      "input": {
+        "otp": "sometimes"
+      },
+      "expected": "Rejected",
+      "actual": "Rejected",
+      "pass": true
+    },
+    {
+      "id": "T43",
+      "name": "Reject unknown backward goal",
+      "input": {},
+      "expected": "Rejected",
+      "actual": "Rejected",
+      "pass": true
+    },
+    {
+      "id": "T44",
+      "name": "Reject conflicting duplicate Prolog answers",
+      "input": {},
+      "expected": "Rejected",
+      "actual": "Rejected",
+      "pass": true
+    },
+    {
+      "id": "T45",
+      "name": "Cycle guard terminates safely",
+      "input": {},
+      "expected": "unknown",
+      "actual": "unknown",
+      "pass": true
+    },
+    {
+      "id": "T46",
+      "name": "Knowledge and rule integrity",
+      "input": {},
+      "expected": "26 facts, 31 rules, complete source locators",
+      "actual": "26 facts, 31 rules, complete source locators",
+      "pass": true
+    },
+    {
+      "id": "T47",
+      "name": "User wants to report a personal scam",
+      "input": {
+        "report": "yes"
+      },
+      "expected": {
+        "bankContact": false,
+        "ruleIds": [
+          "r31"
+        ],
+        "backward": "supported"
+      },
+      "actual": {
+        "bankContact": false,
+        "ruleIds": [
+          "r31"
+        ],
+        "backward": "supported"
+      },
+      "pass": true
+    },
+    {
+      "id": "T48",
+      "name": "Report intent explicitly No",
+      "input": {
+        "report": "no"
+      },
+      "expected": {
+        "bankContact": false,
+        "ruleIds": [],
+        "backward": null
+      },
+      "actual": {
+        "bankContact": false,
+        "ruleIds": [],
+        "backward": null
+      },
+      "pass": true
+    }
+  ]
+}
