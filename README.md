@@ -2,9 +2,6 @@
 
 A Sri Lankan scam-awareness expert system with 26 facts, 31 source-mapped rules, and forward and backward chaining in Prolog.
 
-## Add to GitHub and publish
-
-Follow [GIT_COMMIT_GUIDE.md](GIT_COMMIT_GUIDE.md) to add this completed project in nine logical commits across six feature branches. The included GitHub Actions workflow publishes `dist/` to GitHub Pages. [GITHUB_PAGES.md](GITHUB_PAGES.md) explains the Pages settings.
 
 ## Run locally
 
@@ -72,10 +69,7 @@ Expected: **18/18 simulated DOM tests pass.** Results are written to `docs/ui-te
 | `scripts/serve.cjs` | Local static-file server |
 | `tests/run.cjs`, `tests/ui.cjs` | Automated test suites |
 
-The separate **ScamWise_LK_Assignment_2.pdf** contains the system explanation, diagrams, local guide, test cases, facts, source-mapped rules and decision-code annex. Submit it alongside this source ZIP.
 
-Knowledge originates in nine official CBSL, Sri Lanka CERT and Sri Lanka Police documents, reviewed on 27 September 2026. No expert interview or external expert validation was conducted. AI assistance was used for implementation and documentation; the publications supply the domain knowledge.
-
-For maintenance, edit `scripts/build-knowledge.cjs`, run `npm run knowledge`, then rerun tests. The optional `scripts/build-pdf.py` requires Python 3 and ReportLab to regenerate the report; Python is not needed to run the app.
+Knowledge originates in nine official CBSL, Sri Lanka CERT and Sri Lanka Police documents, reviewed on 27 September 2026.
 
 Tau Prolog's BSD 3-Clause licence is included in `dist/vendor/TAU-LICENSE.txt`; see `THIRD_PARTY_NOTICES.md`.
