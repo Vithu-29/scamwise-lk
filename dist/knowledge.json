@@ -1,0 +1,1025 @@
+{
+  "version": "1.2.1",
+  "reviewed": "2026-09-27",
+  "sources": [
+    {
+      "id": "s1",
+      "organization": "Central Bank of Sri Lanka",
+      "title": "Protect your bank passwords and PINs",
+      "url": "https://www.cbsl.gov.lk/en/news/beware-of-online-scams-protect-your-bank-passwords-and-pin",
+      "published": "2019-11-21",
+      "reviewed": "2026-09-27"
+    },
+    {
+      "id": "s2",
+      "organization": "Central Bank of Sri Lanka",
+      "title": "Online financial frauds and scams",
+      "url": "https://www.cbsl.gov.lk/sites/default/files/cbslweb_documents/press/pr/press_20210121_beware_of_online_financial_frauds_and_scams_e.pdf",
+      "published": "2021-01-21",
+      "reviewed": "2026-09-27"
+    },
+    {
+      "id": "s3",
+      "organization": "Central Bank of Sri Lanka",
+      "title": "Prohibited pyramid schemes",
+      "url": "https://www.cbsl.gov.lk/en/node/18807",
+      "published": null,
+      "reviewed": "2026-09-27"
+    },
+    {
+      "id": "s4",
+      "organization": "Sri Lanka CERT",
+      "title": "Cyber Guardian: secure shopping and scam awareness",
+      "url": "https://www.cert.gov.lk/wp-content/uploads/cyber_gaurdian/issue04/News-Letter-04-E-1English.pdf",
+      "published": null,
+      "reviewed": "2026-09-27"
+    },
+    {
+      "id": "s5",
+      "organization": "Sri Lanka CERT",
+      "title": "Report an incident",
+      "url": "https://cert.gov.lk/report_incident",
+      "published": null,
+      "reviewed": "2026-09-27"
+    },
+    {
+      "id": "s6",
+      "organization": "Central Bank of Sri Lanka",
+      "title": "Beware of financial scams",
+      "url": "https://www.cbsl.gov.lk/en/node/11291",
+      "published": "2021-10-26",
+      "reviewed": "2026-09-27"
+    },
+    {
+      "id": "s7",
+      "organization": "Central Bank of Sri Lanka",
+      "title": "Financial scams and phishing emails",
+      "url": "https://www.cbsl.gov.lk/en/news/the-central-bank-of-sri-lanka-requests-the-general-public-to-be-attentive-to-financial-scams-phishing-emails",
+      "published": "2018-11-14",
+      "reviewed": "2026-09-27"
+    },
+    {
+      "id": "s8",
+      "organization": "Central Bank of Sri Lanka",
+      "title": "Be Scam Proof awareness campaign",
+      "url": "https://www.cbsl.gov.lk/en/be-scam-proof-new",
+      "published": null,
+      "reviewed": "2026-09-27"
+    },
+    {
+      "id": "s9",
+      "organization": "Sri Lanka Police",
+      "title": "Public awareness on emerging online financial scams using the names of reputable institutions",
+      "url": "https://www.police.lk/?p=21963",
+      "published": "2026-03-20",
+      "reviewed": "2026-09-27"
+    }
+  ],
+  "facts": [
+    {
+      "id": "f01",
+      "term": "sensitive(otp)",
+      "text": "An OTP is confidential transaction-verification information.",
+      "source": "s1"
+    },
+    {
+      "id": "f02",
+      "term": "sensitive(pin)",
+      "text": "A banking or card PIN must remain private.",
+      "source": "s1"
+    },
+    {
+      "id": "f03",
+      "term": "sensitive(password)",
+      "text": "Banking passwords must not be disclosed to another person.",
+      "source": "s1"
+    },
+    {
+      "id": "f04",
+      "term": "sensitive(cvv)",
+      "text": "A card security code is confidential payment information.",
+      "source": "s1"
+    },
+    {
+      "id": "f05",
+      "term": "tactic(prize_fee)",
+      "text": "Fake prize notices can request a payment to release winnings.",
+      "source": "s7"
+    },
+    {
+      "id": "f06",
+      "term": "tactic(prize_identity)",
+      "text": "Fake prize notices can collect identity details.",
+      "source": "s7"
+    },
+    {
+      "id": "f07",
+      "term": "tactic(blocked_funds)",
+      "text": "Scammers may promise a reward for unlocking supposedly blocked funds.",
+      "source": "s6"
+    },
+    {
+      "id": "f08",
+      "term": "tactic(approval_claim)",
+      "text": "Forged documents may claim Central Bank approval is needed to release funds.",
+      "source": "s6"
+    },
+    {
+      "id": "f09",
+      "term": "signal(recruitment_income)",
+      "text": "Income mainly based on recruiting participants is a pyramid warning sign.",
+      "source": "s3"
+    },
+    {
+      "id": "f10",
+      "term": "signal(contribution_income)",
+      "text": "Income mainly based on growing participant contributions is a pyramid warning sign.",
+      "source": "s3"
+    },
+    {
+      "id": "f11",
+      "term": "signal(unrealistic_returns)",
+      "text": "Returns that are implausible for the stated risk warrant caution.",
+      "source": "s8"
+    },
+    {
+      "id": "f12",
+      "term": "signal(unverified_provider)",
+      "text": "Regulatory approval of a financial provider should be independently checked.",
+      "source": "s8"
+    },
+    {
+      "id": "f13",
+      "term": "signal(loan_contacts)",
+      "text": "Loan requests for phone-contact access are a privacy warning.",
+      "source": "s2"
+    },
+    {
+      "id": "f14",
+      "term": "signal(loan_files)",
+      "text": "Loan requests for access to phone photographs and files warrant caution.",
+      "source": "s2"
+    },
+    {
+      "id": "f15",
+      "term": "signal(unclear_terms)",
+      "text": "Financial agreements with unclear terms should not be accepted.",
+      "source": "s2"
+    },
+    {
+      "id": "f16",
+      "term": "signal(loan_no_details)",
+      "text": "An online lender with insufficient identifying information is a warning sign.",
+      "source": "s2"
+    },
+    {
+      "id": "f17",
+      "term": "signal(very_low_price)",
+      "text": "An unusually low online selling price can be a scam indicator.",
+      "source": "s4"
+    },
+    {
+      "id": "f18",
+      "term": "signal(no_store_policies)",
+      "text": "Missing delivery and return policies can indicate a dubious store.",
+      "source": "s4"
+    },
+    {
+      "id": "f19",
+      "term": "signal(direct_deposit)",
+      "text": "Direct-transfer shopping payments may be difficult to recover.",
+      "source": "s4"
+    },
+    {
+      "id": "f20",
+      "term": "signal(delivery_links)",
+      "text": "Fake delivery notifications can direct people to harmful links.",
+      "source": "s4"
+    },
+    {
+      "id": "f21",
+      "term": "signal(unofficial_download)",
+      "text": "Untrusted app-download sources create avoidable security risks.",
+      "source": "s4"
+    },
+    {
+      "id": "f22",
+      "term": "signal(impersonation)",
+      "text": "A familiar institution name does not authenticate a message.",
+      "source": "s8"
+    },
+    {
+      "id": "f23",
+      "term": "signal(account_rental)",
+      "text": "Renting or lending a bank account can enable criminal misuse.",
+      "source": "s8"
+    },
+    {
+      "id": "f24",
+      "term": "response(contact_bank)",
+      "text": "Suspicious account activity should be reported promptly to the relevant bank.",
+      "source": "s1"
+    },
+    {
+      "id": "f25",
+      "term": "response(report_cert)",
+      "text": "CERT directs personal scam reports to its official incident portal.",
+      "source": "s5"
+    },
+    {
+      "id": "f26",
+      "term": "response(report_police)",
+      "text": "Suspected financial scams can be reported to the nearest police station.",
+      "source": "s7"
+    }
+  ],
+  "groups": [
+    {
+      "id": "private",
+      "label": "Private information",
+      "short": "Information",
+      "note": "Think about what another person asked you to reveal. Never enter the actual details here."
+    },
+    {
+      "id": "money",
+      "label": "Money & promises",
+      "short": "Money",
+      "note": "Look at what you are being promised and how payments or earnings work."
+    },
+    {
+      "id": "online",
+      "label": "Links, shops & loans",
+      "short": "Online signs",
+      "note": "Check the request against what you can independently verify."
+    },
+    {
+      "id": "impact",
+      "label": "What has happened so far?",
+      "short": "Your situation",
+      "note": "These answers help identify whether you should contact your bank immediately."
+    }
+  ],
+  "questions": [
+    {
+      "id": "otp",
+      "group": "private",
+      "label": "Did someone ask you to tell them your OTP?",
+      "hint": "An OTP is a one-time code. This means sharing it with a person, not entering it yourself in a verified service."
+    },
+    {
+      "id": "pin",
+      "group": "private",
+      "label": "Did someone ask for your banking or card PIN?",
+      "hint": "Do not enter the actual PIN here."
+    },
+    {
+      "id": "password",
+      "group": "private",
+      "label": "Did someone ask for your banking password?",
+      "hint": "Include calls, chats, or messages requesting the password."
+    },
+    {
+      "id": "cvv",
+      "group": "private",
+      "label": "Did a caller or message ask you to disclose your card security code?",
+      "hint": "This means giving the code to a person, not using a verified checkout yourself."
+    },
+    {
+      "id": "impersonation",
+      "group": "private",
+      "label": "Does the sender claim to represent a bank or official institution?",
+      "hint": "A logo or familiar name alone does not verify identity."
+    },
+    {
+      "id": "prize",
+      "group": "money",
+      "label": "Have you been told you won an unexpected prize?",
+      "hint": "For example, a cash draw you do not recall entering."
+    },
+    {
+      "id": "fee",
+      "group": "money",
+      "label": "Must you pay money to receive the promised prize or released funds?",
+      "hint": "Include processing, clearance, or release fees."
+    },
+    {
+      "id": "identity",
+      "group": "money",
+      "label": "Does the prize claim ask for your NIC or passport details?",
+      "hint": "Only answer whether details were requested."
+    },
+    {
+      "id": "blocked",
+      "group": "money",
+      "label": "Are you offered a reward for helping unlock someone else’s blocked funds?",
+      "hint": "This includes alleged foreign funds or frozen balances."
+    },
+    {
+      "id": "approval",
+      "group": "money",
+      "label": "Do they claim Central Bank approval will unlock those funds?",
+      "hint": "Include letters or documents making that claim."
+    },
+    {
+      "id": "recruitment",
+      "group": "money",
+      "label": "Does the scheme mainly pay you for recruiting new members?",
+      "hint": "Focus on the main source of earnings, not ordinary product sales."
+    },
+    {
+      "id": "contributions",
+      "group": "money",
+      "label": "Do earnings mainly depend on members adding more money?",
+      "hint": "Include upgrades or increasing member contributions."
+    },
+    {
+      "id": "returns",
+      "group": "money",
+      "label": "Are unusually high returns promised with little or no risk?",
+      "hint": "Consider the promise in relation to the claimed risk."
+    },
+    {
+      "id": "rental",
+      "group": "money",
+      "label": "Are you asked to rent your bank account or pass others’ money through it?",
+      "hint": "For example, keeping a commission for moving someone else’s funds."
+    },
+    {
+      "id": "provider",
+      "group": "money",
+      "label": "Have you been unable to independently verify the investment provider’s authorisation?",
+      "hint": "Answer No only if you have checked through the relevant official source; otherwise choose Not sure."
+    },
+    {
+      "id": "loan",
+      "group": "online",
+      "label": "Is this an online or mobile loan offer?",
+      "hint": "This provides context for the next four questions."
+    },
+    {
+      "id": "contacts",
+      "group": "online",
+      "label": "Does the loan app request access to your contacts?",
+      "hint": "Include permissions to read your address book."
+    },
+    {
+      "id": "files",
+      "group": "online",
+      "label": "Does the loan app request access to photos or files?",
+      "hint": "Consider permissions unrelated to a clear, necessary purpose."
+    },
+    {
+      "id": "terms",
+      "group": "online",
+      "label": "Are the loan terms, fees, or repayment conditions unclear?",
+      "hint": "Answer based on whether you understand the agreement."
+    },
+    {
+      "id": "lender",
+      "group": "online",
+      "label": "Is adequate information about the lender missing?",
+      "hint": "For example, an independently verifiable identity and contact details."
+    },
+    {
+      "id": "cheap",
+      "group": "online",
+      "label": "Is the online seller’s price unusually low?",
+      "hint": "Compare with similar products from established sellers."
+    },
+    {
+      "id": "policies",
+      "group": "online",
+      "label": "Are the online store’s delivery and return policies missing?",
+      "hint": "Check information you can actually find."
+    },
+    {
+      "id": "deposit",
+      "group": "online",
+      "label": "Does the seller insist on a direct bank transfer?",
+      "hint": "This alone does not prove fraud."
+    },
+    {
+      "id": "delivery",
+      "group": "online",
+      "label": "Is this a parcel or delivery notification?",
+      "hint": "Include messages about a delivery you were not expecting."
+    },
+    {
+      "id": "link",
+      "group": "online",
+      "label": "Does the message include a link you cannot independently verify?",
+      "hint": "Do not open the link just to answer this question."
+    },
+    {
+      "id": "download",
+      "group": "online",
+      "label": "Are you asked to install an app from an untrusted download link?",
+      "hint": "For example, a file sent by an unknown sender."
+    },
+    {
+      "id": "sent",
+      "group": "impact",
+      "label": "Have you already sent money in this suspicious situation?",
+      "hint": "Only confirm whether a payment was made; do not provide account details."
+    },
+    {
+      "id": "shared",
+      "group": "impact",
+      "label": "Have you already disclosed an OTP, PIN, banking password, or card security code?",
+      "hint": "Answer about this suspicious situation."
+    },
+    {
+      "id": "transaction",
+      "group": "impact",
+      "label": "Have you noticed a banking transaction you did not authorise?",
+      "hint": "Check through your bank’s official app or another trusted channel."
+    },
+    {
+      "id": "report",
+      "group": "impact",
+      "label": "Do you want to report a suspected financial or social-media scam?",
+      "hint": "This provides the official CERT reporting route; it does not send a report."
+    }
+  ],
+  "rules": [
+    {
+      "id": "r01",
+      "conditions": [
+        "sensitive(otp)",
+        "obs(otp,yes)"
+      ],
+      "conclusion": "flag(credentials)",
+      "title": "OTP disclosure request",
+      "source": "s1",
+      "why": "A request to disclose an OTP exposes confidential verification information.",
+      "locator": "Confidential information list and non-disclosure advice",
+      "evidence": "OTPs are among the protected account-access details."
+    },
+    {
+      "id": "r02",
+      "conditions": [
+        "sensitive(pin)",
+        "obs(pin,yes)"
+      ],
+      "conclusion": "flag(credentials)",
+      "title": "PIN disclosure request",
+      "source": "s1",
+      "why": "A PIN request is a credential-protection warning.",
+      "locator": "Confidential information list and non-disclosure advice",
+      "evidence": "PINs are included in confidential banking information."
+    },
+    {
+      "id": "r03",
+      "conditions": [
+        "sensitive(password)",
+        "obs(password,yes)"
+      ],
+      "conclusion": "flag(credentials)",
+      "title": "Banking password request",
+      "source": "s1",
+      "why": "A banking password request is a credential-protection warning.",
+      "locator": "Confidential information list and non-disclosure advice",
+      "evidence": "Banking passwords must be kept confidential."
+    },
+    {
+      "id": "r04",
+      "conditions": [
+        "sensitive(cvv)",
+        "obs(cvv,yes)"
+      ],
+      "conclusion": "flag(credentials)",
+      "title": "Card security-code request",
+      "source": "s1",
+      "why": "The request concerns confidential payment information.",
+      "locator": "Confidential information list and non-disclosure advice",
+      "evidence": "Card security codes are listed as confidential details."
+    },
+    {
+      "id": "r05",
+      "conditions": [
+        "flag(credentials)",
+        "signal(impersonation)",
+        "obs(impersonation,yes)"
+      ],
+      "conclusion": "category(impersonation)",
+      "title": "Possible institution impersonation",
+      "source": "s8",
+      "why": "An institution claim combined with a credential request needs independent verification.",
+      "locator": "The Four Rules: protect your information; check before you act",
+      "evidence": "Official identity claims do not justify asking for secret credentials."
+    },
+    {
+      "id": "r06",
+      "conditions": [
+        "flag(credentials)",
+        "response(contact_bank)"
+      ],
+      "conclusion": "action(contact_bank)",
+      "title": "Tell the bank about the request",
+      "source": "s1",
+      "why": "CBSL advises informing the bank when a third party requests confidential account-access information.",
+      "locator": "Final body paragraph: requests for confidential account access",
+      "evidence": "Inform the bank if another party requests account-access information."
+    },
+    {
+      "id": "r07",
+      "conditions": [
+        "tactic(prize_fee)",
+        "obs(prize,yes)",
+        "obs(fee,yes)"
+      ],
+      "conclusion": "category(prize)",
+      "title": "Prize payment warning",
+      "source": "s7",
+      "why": "An unexpected prize requiring payment matches a documented scam pattern.",
+      "locator": "Body paragraph on prizes, fees and identity details",
+      "evidence": "Fraudulent prize notices ask for release fees."
+    },
+    {
+      "id": "r08",
+      "conditions": [
+        "tactic(prize_identity)",
+        "obs(prize,yes)",
+        "obs(identity,yes)"
+      ],
+      "conclusion": "category(prize)",
+      "title": "Prize identity-collection warning",
+      "source": "s7",
+      "why": "An unexpected prize collecting identity details needs verification.",
+      "locator": "Body paragraph on prizes, fees and identity details",
+      "evidence": "Fraudulent prize notices seek NIC or passport information."
+    },
+    {
+      "id": "r09",
+      "conditions": [
+        "tactic(blocked_funds)",
+        "obs(blocked,yes)"
+      ],
+      "conclusion": "category(blocked_funds)",
+      "title": "Blocked-funds reward warning",
+      "source": "s6",
+      "why": "A reward for unlocking supposedly blocked funds matches the documented warning.",
+      "locator": "Opening paragraph: rewards for unlocking blocked funds",
+      "evidence": "A promised reward for unlocking funds is a documented tactic."
+    },
+    {
+      "id": "r10",
+      "conditions": [
+        "tactic(approval_claim)",
+        "obs(blocked,yes)",
+        "obs(approval,yes)"
+      ],
+      "conclusion": "category(blocked_funds)",
+      "title": "Alleged approval warning",
+      "source": "s6",
+      "why": "A blocked-funds reward relying on alleged Central Bank approval is suspicious.",
+      "locator": "Paragraph on forged letters and alleged CBSL approval",
+      "evidence": "Scam documents can claim approval is needed to release funds."
+    },
+    {
+      "id": "r11",
+      "conditions": [
+        "signal(recruitment_income)",
+        "obs(recruitment,yes)"
+      ],
+      "conclusion": "category(pyramid)",
+      "title": "Recruitment-based earnings",
+      "source": "s3",
+      "why": "Recruitment is the reported main income source, which is a pyramid warning sign.",
+      "locator": "Opening definition of prohibited pyramid schemes",
+      "evidence": "Primary earnings from recruiting participants are a warning pattern."
+    },
+    {
+      "id": "r12",
+      "conditions": [
+        "signal(contribution_income)",
+        "obs(contributions,yes)"
+      ],
+      "conclusion": "category(pyramid)",
+      "title": "Contribution-based earnings",
+      "source": "s3",
+      "why": "Earnings reportedly rely on expanding participant contributions.",
+      "locator": "Opening definition of prohibited pyramid schemes",
+      "evidence": "Primary earnings from increased participant contributions are a warning pattern."
+    },
+    {
+      "id": "r13",
+      "conditions": [
+        "signal(unrealistic_returns)",
+        "obs(returns,yes)"
+      ],
+      "conclusion": "category(investment)",
+      "title": "Unrealistic return warning",
+      "source": "s8",
+      "why": "A very high return paired with little risk warrants verification.",
+      "locator": "The Four Rules: question unrealistic returns",
+      "evidence": "Very high returns with low risk require caution."
+    },
+    {
+      "id": "r14",
+      "conditions": [
+        "signal(unverified_provider)",
+        "obs(provider,yes)"
+      ],
+      "conclusion": "flag(provider)",
+      "title": "Provider verification needed",
+      "source": "s8",
+      "why": "The provider’s authorisation has not been independently established.",
+      "locator": "Scam Files: unregistered finance companies",
+      "evidence": "Check regulatory approval before trusting an investment provider."
+    },
+    {
+      "id": "r15",
+      "conditions": [
+        "signal(loan_contacts)",
+        "obs(loan,yes)",
+        "obs(contacts,yes)"
+      ],
+      "conclusion": "category(loan_privacy)",
+      "title": "Loan contact-access warning",
+      "source": "s2",
+      "why": "The loan application seeks access to phone contacts.",
+      "locator": "Page 1: mobile-loan characteristics and data-access advice",
+      "evidence": "Loan-related access to phone contacts is discouraged."
+    },
+    {
+      "id": "r16",
+      "conditions": [
+        "signal(loan_files)",
+        "obs(loan,yes)",
+        "obs(files,yes)"
+      ],
+      "conclusion": "category(loan_privacy)",
+      "title": "Loan file-access warning",
+      "source": "s2",
+      "why": "The loan application seeks access to personal phone files.",
+      "locator": "Page 1: mobile-loan characteristics and data-access advice",
+      "evidence": "Loan-related access to photographs and files is discouraged."
+    },
+    {
+      "id": "r17",
+      "conditions": [
+        "signal(unclear_terms)",
+        "obs(loan,yes)",
+        "obs(terms,yes)"
+      ],
+      "conclusion": "category(loan_terms)",
+      "title": "Unclear loan agreement",
+      "source": "s2",
+      "why": "The loan terms are not understood well enough for an informed agreement.",
+      "locator": "Page 1: advice to understand transaction terms",
+      "evidence": "Understand the financial agreement before accepting it."
+    },
+    {
+      "id": "r18",
+      "conditions": [
+        "signal(loan_no_details)",
+        "obs(loan,yes)",
+        "obs(lender,yes)"
+      ],
+      "conclusion": "category(loan_terms)",
+      "title": "Unclear lender identity",
+      "source": "s2",
+      "why": "Insufficient lender information prevents a reliable check.",
+      "locator": "Page 1: lender information and mobile-loan characteristics",
+      "evidence": "Obtain sufficient information about the lender."
+    },
+    {
+      "id": "r19",
+      "conditions": [
+        "signal(very_low_price)",
+        "obs(cheap,yes)"
+      ],
+      "conclusion": "category(shopping)",
+      "title": "Unusually low shopping price",
+      "source": "s4",
+      "why": "An unusually low price is one of the shopping indicators listed by CERT.",
+      "locator": "Page 1: Know the Warning Signs",
+      "evidence": "Extremely low selling prices can signal a scam."
+    },
+    {
+      "id": "r20",
+      "conditions": [
+        "signal(no_store_policies)",
+        "obs(policies,yes)"
+      ],
+      "conclusion": "category(shopping)",
+      "title": "Store transparency warning",
+      "source": "s4",
+      "why": "Missing delivery or return policies are shopping warning signs listed by CERT.",
+      "locator": "Page 1: Know the Warning Signs",
+      "evidence": "Missing delivery or return policies can signal a scam."
+    },
+    {
+      "id": "r21",
+      "conditions": [
+        "signal(delivery_links)",
+        "obs(delivery,yes)",
+        "obs(link,yes)"
+      ],
+      "conclusion": "category(delivery)",
+      "title": "Delivery-link warning",
+      "source": "s4",
+      "why": "The delivery message contains a link you cannot independently verify.",
+      "locator": "Page 1: Watch Out for Fake Delivery Scams",
+      "evidence": "Fake parcel messages use links to obtain information or install malware."
+    },
+    {
+      "id": "r22",
+      "conditions": [
+        "obs(link,yes)"
+      ],
+      "conclusion": "category(phishing)",
+      "title": "Unverified message link",
+      "source": "s4",
+      "why": "Avoid a questionable message link and access the genuine service directly.",
+      "locator": "Page 2: Protect Yourself from Scams",
+      "evidence": "Avoid questionable message links; visit the service directly."
+    },
+    {
+      "id": "r23",
+      "conditions": [
+        "signal(unofficial_download)",
+        "obs(download,yes)"
+      ],
+      "conclusion": "category(download)",
+      "title": "Untrusted app warning",
+      "source": "s4",
+      "why": "An untrusted download link should not be used to install an app.",
+      "locator": "Page 2: Protect Yourself from Scams",
+      "evidence": "Use official download sources instead of untrusted app files."
+    },
+    {
+      "id": "r24",
+      "conditions": [
+        "signal(account_rental)",
+        "obs(rental,yes)"
+      ],
+      "conclusion": "category(account_misuse)",
+      "title": "Account misuse warning",
+      "source": "s8",
+      "why": "The request involves using your bank account to handle another party’s money.",
+      "locator": "Scam Files: bank-account lending or renting",
+      "evidence": "Others may misuse a borrowed or rented bank account."
+    },
+    {
+      "id": "r25",
+      "conditions": [
+        "response(contact_bank)",
+        "obs(sent,yes)"
+      ],
+      "conclusion": "action(contact_bank)",
+      "title": "Payment already made",
+      "source": "s9",
+      "why": "Money was sent in a situation you consider suspicious. Contact the bank promptly.",
+      "locator": "Precautions: final item on suspected victims",
+      "evidence": "A suspected fraud victim should promptly inform their bank."
+    },
+    {
+      "id": "r26",
+      "conditions": [
+        "response(contact_bank)",
+        "obs(shared,yes)"
+      ],
+      "conclusion": "action(contact_bank)",
+      "title": "Credentials already shared",
+      "source": "s9",
+      "why": "Confidential access information has already been disclosed.",
+      "locator": "Precautions: final item on suspected victims",
+      "evidence": "A suspected fraud victim should promptly inform their bank."
+    },
+    {
+      "id": "r27",
+      "conditions": [
+        "response(contact_bank)",
+        "obs(transaction,yes)"
+      ],
+      "conclusion": "action(contact_bank)",
+      "title": "Unrecognised transaction",
+      "source": "s1",
+      "why": "The reported transaction was not authorised by you.",
+      "locator": "Final body paragraph: unexpected transaction notifications",
+      "evidence": "Inform the bank about transactions not initiated by the account holder."
+    },
+    {
+      "id": "r28",
+      "conditions": [
+        "signal(direct_deposit)",
+        "obs(deposit,yes)"
+      ],
+      "conclusion": "category(shopping)",
+      "title": "Direct-deposit shopping payment",
+      "source": "s4",
+      "why": "CERT lists direct bank deposits among shopping warning signs; this alone does not prove fraud.",
+      "locator": "Page 1: Know the Warning Signs; Use Secure Payment Methods",
+      "evidence": "Direct deposits are a listed warning and can be hard to recover."
+    },
+    {
+      "id": "r29",
+      "conditions": [
+        "category(pyramid)",
+        "response(report_police)"
+      ],
+      "conclusion": "action(report_police)",
+      "title": "Report a suspected pyramid scheme",
+      "source": "s3",
+      "why": "CBSL identifies Police as a reporting route for suspected pyramid schemes.",
+      "locator": "Reporting guidance following the pyramid-scheme definition",
+      "evidence": "Report suspected pyramid schemes to Police or CBSL."
+    },
+    {
+      "id": "r30",
+      "conditions": [
+        "category(prize)"
+      ],
+      "conclusion": "action(verify_institution)",
+      "title": "Verify the claimed prize directly",
+      "source": "s7",
+      "why": "CBSL advises direct verification with the named institution for this type of notification.",
+      "locator": "Final body paragraph: verify directly with the named institution",
+      "evidence": "Check the notification directly with the institution it names."
+    },
+    {
+      "id": "r31",
+      "conditions": [
+        "response(report_cert)",
+        "obs(report,yes)"
+      ],
+      "conclusion": "action(report_cert)",
+      "title": "Official CERT reporting route",
+      "source": "s5",
+      "why": "CERT directs personal financial and social-media scam reports to its incident portal.",
+      "locator": "Important Notice: social-media and financial-fraud incidents",
+      "evidence": "Personal scam reports belong in the official incident portal."
+    }
+  ],
+  "outcomes": {
+    "flag(credentials)": {
+      "label": "Confidential details requested",
+      "advice": "Do not disclose the requested code or password. Contact the institution through its official app, website, or the number on your card."
+    },
+    "flag(provider)": {
+      "label": "Provider not independently verified",
+      "advice": "Check the provider’s authorisation with the appropriate regulator before committing funds."
+    },
+    "category(impersonation)": {
+      "label": "Verify the claimed institution",
+      "advice": "End the conversation and contact the claimed institution through a channel you find independently."
+    },
+    "category(prize)": {
+      "label": "Possible prize scam",
+      "advice": "Pause any fee payment or identity disclosure. Verify the claimed prize directly with the named organisation."
+    },
+    "category(blocked_funds)": {
+      "label": "Possible blocked-funds scam",
+      "advice": "Do not send money to release the alleged funds. Verify any claimed official approval independently."
+    },
+    "category(pyramid)": {
+      "label": "Pyramid-scheme warning signs",
+      "advice": "Pause participation and recruitment. Consult CBSL’s current guidance; this tool does not determine whether a named scheme is illegal."
+    },
+    "category(investment)": {
+      "label": "Unrealistic investment promise",
+      "advice": "Ask for independently verifiable information on risks and authorisation. Do not rely on a promised return."
+    },
+    "category(loan_privacy)": {
+      "label": "Intrusive loan-app permissions",
+      "advice": "Do not grant the requested phone access. Verify the lender and review the privacy terms."
+    },
+    "category(loan_terms)": {
+      "label": "Loan information needs checking",
+      "advice": "Get clear lender information, fees, and repayment terms before accepting the agreement."
+    },
+    "category(shopping)": {
+      "label": "Online shopping warning signs",
+      "advice": "Verify the seller independently and review the purchase and payment protections before paying."
+    },
+    "category(delivery)": {
+      "label": "Suspicious delivery link",
+      "advice": "Avoid the message link. Check the delivery using the courier’s independently located official service."
+    },
+    "category(phishing)": {
+      "label": "Avoid the unverified message link",
+      "advice": "Do not follow the questionable link. Open the genuine service directly if you need to sign in."
+    },
+    "category(download)": {
+      "label": "Untrusted app download",
+      "advice": "Do not install the file. Use a verified official source for the app you need."
+    },
+    "category(account_misuse)": {
+      "label": "Possible bank-account misuse",
+      "advice": "Do not rent your account or move unknown funds for someone else. Ask your bank for guidance."
+    },
+    "action(contact_bank)": {
+      "label": "Contact your bank now",
+      "advice": "Use the official banking app, card contact number, or branch. Explain what happened and ask about securing access and the transaction."
+    },
+    "action(report_cert)": {
+      "label": "Use the CERT incident portal",
+      "advice": "Follow the reporting guidance at cert.gov.lk/report_incident. The CERT hotline is 101."
+    },
+    "action(report_police)": {
+      "label": "Report the suspected scam to Police",
+      "advice": "Contact your nearest police station. Keep relevant messages, payment references, and dates available for the report."
+    },
+    "action(verify_institution)": {
+      "label": "Verify the prize with the named institution",
+      "advice": "Use contact details obtained independently from the institution’s official website or branch."
+    }
+  },
+  "samples": [
+    {
+      "id": "otp_call",
+      "label": "A “bank” caller asks for an OTP",
+      "description": "A caller claims to represent a bank and asks for an OTP. Nothing has been shared yet.",
+      "answers": {
+        "otp": "yes",
+        "impersonation": "yes",
+        "shared": "no",
+        "sent": "no",
+        "transaction": "no"
+      },
+      "goal": "category(impersonation)"
+    },
+    {
+      "id": "prize_fee",
+      "label": "Pay a fee to claim a prize",
+      "description": "An unexpected cash prize requires a release fee.",
+      "answers": {
+        "prize": "yes",
+        "fee": "yes",
+        "sent": "no"
+      },
+      "goal": "category(prize)"
+    },
+    {
+      "id": "pyramid",
+      "label": "Earn mainly by recruiting people",
+      "description": "An offer says income mainly comes from signing up new participants.",
+      "answers": {
+        "recruitment": "yes",
+        "sent": "no"
+      },
+      "goal": "category(pyramid)"
+    },
+    {
+      "id": "delivery",
+      "label": "An unfamiliar parcel link",
+      "description": "A parcel notification contains a link that cannot be verified.",
+      "answers": {
+        "delivery": "yes",
+        "link": "yes"
+      },
+      "goal": "category(delivery)"
+    },
+    {
+      "id": "exposed",
+      "label": "Already shared banking details",
+      "description": "An OTP was disclosed and an unrecognised transaction appeared.",
+      "answers": {
+        "otp": "yes",
+        "shared": "yes",
+        "transaction": "yes"
+      },
+      "goal": "action(contact_bank)"
+    },
+    {
+      "id": "no_signs",
+      "label": "No listed warning signs",
+      "description": "All listed observations are explicitly No. This still does not establish that an offer is safe.",
+      "answers": {
+        "otp": "no",
+        "pin": "no",
+        "password": "no",
+        "cvv": "no",
+        "impersonation": "no",
+        "prize": "no",
+        "fee": "no",
+        "identity": "no",
+        "blocked": "no",
+        "approval": "no",
+        "recruitment": "no",
+        "contributions": "no",
+        "returns": "no",
+        "rental": "no",
+        "provider": "no",
+        "loan": "no",
+        "contacts": "no",
+        "files": "no",
+        "terms": "no",
+        "lender": "no",
+        "cheap": "no",
+        "policies": "no",
+        "deposit": "no",
+        "delivery": "no",
+        "link": "no",
+        "download": "no",
+        "sent": "no",
+        "shared": "no",
+        "transaction": "no",
+        "report": "no"
+      },
+      "goal": "category(prize)"
+    }
+  ]
+}
