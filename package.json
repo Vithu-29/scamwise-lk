@@ -1,0 +1,15 @@
+{
+  "name": "scamwise-lk",
+  "version": "1.2.1",
+  "private": true,
+  "description": "Sri Lankan scam-awareness expert system using real Prolog",
+  "scripts": {
+    "start": "node scripts/serve.cjs",
+    "test": "node tests/run.cjs",
+    "knowledge": "node scripts/build-knowledge.cjs",
+    "test:ui": "node tests/ui.cjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
